@@ -120,13 +120,6 @@ LEER_BOTON_C3:
 	RCALL	SUMATORIA_F
 	RET
 
-RETORNAR:
-    RET
-
-BOTON_LIBRE:
-    LDI     R25, 0       ; Resetear estado del botón cuando se suelta
-    RET
-
 // SUMAR RESULTADOS FINALES
 SUMATORIA_F:
     RCALL   ANTIRREBOTE  
@@ -138,13 +131,13 @@ SUMATORIA_F:
     CPI     R16, 16  
     BRLO    NO_OVERFLOW  
 
-    SBI     PORTB, 4  ; Encender LED en PB4 si hay overflow
+    SBI     PORTB, 4  // Encender LED en PB4 si hay overflow
     SUBI    R16, 16  
 
 NO_OVERFLOW:
     MOV     R24, R16  
     RCALL   ACTUALIZAR_SALIDAS_C3  
-    RCALL   DELAY_1S   ; Esperar 1 segundo antes de continuar
+    RCALL   DELAY_1S   // Esperar 1 segundo antes de continuar
     RET
 
 					   
