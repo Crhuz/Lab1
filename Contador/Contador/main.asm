@@ -49,7 +49,9 @@ MAIN:
     RCALL   ACTUALIZAR_SALIDAS_C1   
 
     RCALL   LEER_BOTONES_C2  
-    RCALL   ACTUALIZAR_SALIDAS_C2  
+    RCALL   ACTUALIZAR_SALIDAS_C2
+	
+	RCALL	LEER_BOTON_C3
 
     RJMP    MAIN  
 
@@ -76,7 +78,8 @@ RESTAR_C1:
     CPI     R18, 0x00  
     BRNE    DEC_C1  
     LDI     R18, 0x0F  
-    RET  
+    RET 
+	 
 DEC_C1:  
     DEC     R18  
     ANDI    R18, 0x0F  
@@ -109,7 +112,42 @@ RESTAR_C2:
 DEC_C2:  
     DEC     R22  
     ANDI    R22, 0x0F  
-    RET  
+    RET
+
+// SUBRUTINA PARA EL SUMADOR FINAL PC4
+LEER_BOTON_C3:
+	SBIS	PINC, 4
+	RCALL	SUMATORIA_F
+	RET
+
+RETORNAR:
+    RET
+
+BOTON_LIBRE:
+    LDI     R25, 0       ; Resetear estado del botón cuando se suelta
+    RET
+
+// SUMAR RESULTADOS FINALES
+SUMATORIA_F:
+    RCALL   ANTIRREBOTE  
+    SBIC    PINC, 4  
+    RET
+
+    MOV     R16, R18  
+    ADD     R16, R22  
+    CPI     R16, 16  
+    BRLO    NO_OVERFLOW  
+
+    SBI     PORTB, 4  ; Encender LED en PB4 si hay overflow
+    SUBI    R16, 16  
+
+NO_OVERFLOW:
+    MOV     R24, R16  
+    RCALL   ACTUALIZAR_SALIDAS_C3  
+    RCALL   DELAY_1S   ; Esperar 1 segundo antes de continuar
+    RET
+
+					   
 
 // SUBRUTINA PARA MOSTRAR PRIMER CONTADOR EN PD4 - PD7 
 ACTUALIZAR_SALIDAS_C1:  
@@ -123,8 +161,14 @@ ACTUALIZAR_SALIDAS_C1:
 ACTUALIZAR_SALIDAS_C2:  
     MOV     R16, R22  
     ANDI    R16, 0x0F  
-    OUT     PORTB, R16  
+    OUT     PORTB, R16 
     RET  
+
+// SUBRUTINA PARA MOSTRAR EL RESULTADO DEL SUMADOR
+ACTUALIZAR_SALIDAS_C3:
+	ANDI	R24, 0x0F
+	OUT 	PORTD, R24
+	RET    
 
 // ANTIRREBOTE (20ms) 
 ANTIRREBOTE:  
@@ -140,4 +184,20 @@ BUCLE3:
     BRNE    BUCLE2  
     DEC     R19  
     BRNE    BUCLE1  
+    RET
+
+// Enseñar el valor de la suma por un segundo	
+DELAY_1S:
+    LDI     R19, 255
+DELAY_LOOP1:
+    LDI     R20, 255
+DELAY_LOOP2:
+    LDI     R21, 255
+DELAY_LOOP3:
+    DEC     R21
+    BRNE    DELAY_LOOP3
+    DEC     R20
+    BRNE    DELAY_LOOP2
+    DEC     R19
+    BRNE    DELAY_LOOP1
     RET 

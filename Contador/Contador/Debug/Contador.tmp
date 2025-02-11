@@ -1,19 +1,19 @@
 <ASSEMBLER_INFO>
  <VERSION>2.2.8</VERSION>
  <DEVICE>"ATmega328P"</DEVICE>
- <WORKING_DIR>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Contador\Contador\Debug</WORKING_DIR>
+ <WORKING_DIR>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\Debug</WORKING_DIR>
  <INCLUDE_PATH>
   <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
   <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
   <DIR></DIR>
  </INCLUDE_PATH>
- <SOURCE_FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Contador\Contador\main.asm</SOURCE_FILE>
+ <SOURCE_FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</SOURCE_FILE>
  <INCLUDED_FILES>
   <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
   <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\M328PDEF.inc</FILE>
  </INCLUDED_FILES>
  <OBJECT_FILES>
-  <FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Contador\Contador\Debug\Contador.obj</FILE>
+  <FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\Debug\Contador.obj</FILE>
  </OBJECT_FILES>
  <HEX_FILES>
   <FILE>Contador.hex</FILE>
@@ -23,21 +23,31 @@
   <FILE>Contador.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <SETUP><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Contador\Contador\main.asm</FILE><LINE>21</LINE></SETUP>
-  <MAIN><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Contador\Contador\main.asm</FILE><LINE>47</LINE></MAIN>
-  <LEER_BOTONES_C1><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Contador\Contador\main.asm</FILE><LINE>57</LINE></LEER_BOTONES_C1>
-  <ACTUALIZAR_SALIDAS_C1><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Contador\Contador\main.asm</FILE><LINE>115</LINE></ACTUALIZAR_SALIDAS_C1>
-  <LEER_BOTONES_C2><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Contador\Contador\main.asm</FILE><LINE>86</LINE></LEER_BOTONES_C2>
-  <ACTUALIZAR_SALIDAS_C2><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Contador\Contador\main.asm</FILE><LINE>123</LINE></ACTUALIZAR_SALIDAS_C2>
-  <SUMAR_C1><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Contador\Contador\main.asm</FILE><LINE>64</LINE></SUMAR_C1>
-  <RESTAR_C1><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Contador\Contador\main.asm</FILE><LINE>72</LINE></RESTAR_C1>
-  <ANTIRREBOTE><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Contador\Contador\main.asm</FILE><LINE>130</LINE></ANTIRREBOTE>
-  <DEC_C1><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Contador\Contador\main.asm</FILE><LINE>80</LINE></DEC_C1>
-  <SUMAR_C2><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Contador\Contador\main.asm</FILE><LINE>93</LINE></SUMAR_C2>
-  <RESTAR_C2><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Contador\Contador\main.asm</FILE><LINE>101</LINE></RESTAR_C2>
-  <DEC_C2><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Contador\Contador\main.asm</FILE><LINE>109</LINE></DEC_C2>
-  <BUCLE1><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Contador\Contador\main.asm</FILE><LINE>132</LINE></BUCLE1>
-  <BUCLE2><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Contador\Contador\main.asm</FILE><LINE>134</LINE></BUCLE2>
-  <BUCLE3><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Contador\Contador\main.asm</FILE><LINE>136</LINE></BUCLE3>
+  <SETUP><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>21</LINE></SETUP>
+  <MAIN><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>47</LINE></MAIN>
+  <LEER_BOTONES_C1><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>59</LINE></LEER_BOTONES_C1>
+  <ACTUALIZAR_SALIDAS_C1><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>153</LINE></ACTUALIZAR_SALIDAS_C1>
+  <LEER_BOTONES_C2><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>89</LINE></LEER_BOTONES_C2>
+  <ACTUALIZAR_SALIDAS_C2><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>161</LINE></ACTUALIZAR_SALIDAS_C2>
+  <LEER_BOTON_C3><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>118</LINE></LEER_BOTON_C3>
+  <SUMAR_C1><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>66</LINE></SUMAR_C1>
+  <RESTAR_C1><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>74</LINE></RESTAR_C1>
+  <ANTIRREBOTE><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>174</LINE></ANTIRREBOTE>
+  <DEC_C1><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>83</LINE></DEC_C1>
+  <SUMAR_C2><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>96</LINE></SUMAR_C2>
+  <RESTAR_C2><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>104</LINE></RESTAR_C2>
+  <DEC_C2><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>112</LINE></DEC_C2>
+  <SUMATORIA_F><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>131</LINE></SUMATORIA_F>
+  <RETORNAR><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>123</LINE></RETORNAR>
+  <BOTON_LIBRE><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>126</LINE></BOTON_LIBRE>
+  <NO_OVERFLOW><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>144</LINE></NO_OVERFLOW>
+  <ACTUALIZAR_SALIDAS_C3><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>168</LINE></ACTUALIZAR_SALIDAS_C3>
+  <DELAY_1S><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>190</LINE></DELAY_1S>
+  <BUCLE1><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>176</LINE></BUCLE1>
+  <BUCLE2><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>178</LINE></BUCLE2>
+  <BUCLE3><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>180</LINE></BUCLE3>
+  <DELAY_LOOP1><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>192</LINE></DELAY_LOOP1>
+  <DELAY_LOOP2><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>194</LINE></DELAY_LOOP2>
+  <DELAY_LOOP3><FILE>C:\Users\super\OneDrive\Micros\Prelabs\Prelab1\Lab1\Contador\Contador\main.asm</FILE><LINE>196</LINE></DELAY_LOOP3>
  </LABELS>
 </ASSEMBLER_INFO>
