@@ -125,12 +125,10 @@ SUMATORIA_F:
     RCALL   ANTIRREBOTE  
     SBIC    PINC, 4  
     RET
-
     MOV     R16, R18  
     ADD     R16, R22  
     CPI     R16, 16  
     BRLO    NO_OVERFLOW  
-
     SBI     PORTB, 4  // Encender LED en PB4 si hay overflow
     SUBI    R16, 16  
 
